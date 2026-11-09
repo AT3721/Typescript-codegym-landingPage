@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeGym Career - Nâng Tầm Sự Nghiệp Lập Trình</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Roboto - Material Standard) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <!-- MDBootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #0d47a1 0%, #1976d2 100%);
+            color: #ffffff;
+            padding: 80px 0;
+        }
+
+        .card-custom {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. Header / Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-2-strong">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary fs-4" href="#">
+                <i class="fa-solid fa-code me-2"></i>CodeGym Career
+            </a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium">
+                    <li class="nav-item"><a class="nav-link active" href="#">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Chương trình</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stats">Thống kê</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#register">Đăng ký</a></li>
+                </ul>
+                <a href="#register" class="btn btn-primary btn-rounded ms-lg-3 ripple-surface" data-mdb-ripple-init>Tư
+                    vấn ngay</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section -->
+    <header class="hero-section text-center text-lg-start">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3">Biến Đam Mê Lập Trình Thành Sự Nghiệp Bền Vững</h1>
+                    <p class="lead opacity-80 mb-4">Chương trình huấn luyện thực chiến bài bản, cam kết việc làm và kết
+                        nối trực tiếp với hàng trăm doanh nghiệp công nghệ hàng đầu.</p>
+                    <a href="#register" class="btn btn-warning btn-lg btn-rounded shadow-2-strong me-2 mb-2"
+                        data-mdb-ripple-init>Đăng ký nhập học</a>
+                    <a href="#courses" class="btn btn-outline-light btn-lg btn-rounded mb-2" data-mdb-ripple-init>Tìm
+                        hiểu thêm</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://via.placeholder.com/550x350/ffffff/1976d2?text=CodeGym+Career+Training"
+                        class="img-fluid rounded-4 shadow-5-strong" alt="CodeGym Career Hero">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. Thông tin chương trình / Giá trị (Material Cards) -->
+    <section id="courses" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-primary">Chương Trình Đào Tạo Nổi Bật</h2>
+                <p class="text-muted">Lộ trình được thiết kế chuẩn nhu cầu tuyển dụng thực tế của doanh nghiệp</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-2-strong card-custom rounded-4">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-init data-mdb-ripple-color="light">
+                            <img src="https://via.placeholder.com/400x200/1976d2/ffffff?text=Java+Fullstack"
+                                class="img-fluid card-img-top" alt="Java Fullstack">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary">Lập Trình Java Fullstack</h5>
+                            <p class="card-text text-muted">Làm chủ ngôn ngữ Java, Spring Boot và Angular/React để trở
+                                thành lập trình viên toàn năng.</p>
+                            <a href="#register" class="btn btn-link p-0 fw-bold" data-mdb-ripple-init>Chi tiết khóa học
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-2-strong card-custom rounded-4">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-init data-mdb-ripple-color="light">
+                            <img src="https://via.placeholder.com/400x200/0d47a1/ffffff?text=Frontend+Developer"
+                                class="img-fluid card-img-top" alt="Frontend Developer">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary">Lập Trình Frontend Chuyên Nghiệp</h5>
+                            <p class="card-text text-muted">Xây dựng giao diện web mượt mà, hiện đại với HTML5, CSS3,
+                                JavaScript ES6 và ReactJS.</p>
+                            <a href="#register" class="btn btn-link p-0 fw-bold" data-mdb-ripple-init>Chi tiết khóa học
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-2-strong card-custom rounded-4">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-init data-mdb-ripple-color="light">
+                            <img src="https://via.placeholder.com/400x200/00838f/ffffff?text=Tester+/+QA"
+                                class="img-fluid card-img-top" alt="Tester QA">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary">Kiểm Thử Phần Mềm (Tester/QA)</h5>
+                            <p class="card-text text-muted">Nắm vững quy trình kiểm thử thủ công và tự động (Automation
+                                Test) trong dự án phần mềm.</p>
+                            <a href="#register" class="btn btn-link p-0 fw-bold" data-mdb-ripple-init>Chi tiết khóa học
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Thống kê / Con số ấn tượng (Testimonials & Stats) -->
+    <section id="stats" class="bg-white py-5 shadow-1-strong">
+        <div class="container py-4 text-center">
+            <h2 class="fw-bold text-primary mb-5">Con Số Ấn Tượng</h2>
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="p-3 border rounded-4 shadow-1-soft">
+                        <i class="fa-solid fa-user-graduate fs-1 text-primary mb-2"></i>
+                        <h3 class="fw-bold display-6 mb-1">98%</h3>
+                        <p class="text-muted m-0">Học viên có việc làm</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 border rounded-4 shadow-1-soft">
+                        <i class="fa-solid fa-building-user fs-1 text-primary mb-2"></i>
+                        <h3 class="fw-bold display-6 mb-1">500+</h3>
+                        <p class="text-muted m-0">Doanh nghiệp đối tác</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 border rounded-4 shadow-1-soft">
+                        <i class="fa-solid fa-laptop-code fs-1 text-primary mb-2"></i>
+                        <h3 class="fw-bold display-6 mb-1">1000+</h3>
+                        <p class="text-muted m-0">Dự án đã hoàn thành</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 border rounded-4 shadow-1-soft">
+                        <i class="fa-solid fa-star fs-1 text-primary mb-2"></i>
+                        <h3 class="fw-bold display-6 mb-1">4.9/5</h3>
+                        <p class="text-muted m-0">Đánh giá hài lòng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Biểu mẫu đăng ký (Material Form Controls) -->
+    <section id="register" class="py-5">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="card shadow-4-strong rounded-4 p-4 p-md-5 bg-white">
+                        <div class="text-center mb-4">
+                            <h3 class="fw-bold text-primary">Đăng Ký Nhận Tư Vấn Lộ Trình</h3>
+                            <p class="text-muted">Để lại thông tin, cố vấn học tập CodeGym sẽ liên hệ hỗ trợ bạn trong
+                                24h</p>
+                        </div>
+
+                        <form>
+                            <!-- Name Input (Floating Label) -->
+                            <div class="form-outline mb-4" data-mdb-input-init>
+                                <input type="text" id="formName" class="form-control form-control-lg" required />
+                                <label class="form-label" for="formName">Họ và tên *</label>
+                            </div>
+
+                            <!-- Phone Input -->
+                            <div class="form-outline mb-4" data-mdb-input-init>
+                                <input type="tel" id="formPhone" class="form-control form-control-lg" required />
+                                <label class="form-label" for="formPhone">Số điện thoại *</label>
+                            </div>
+
+                            <!-- Email Input -->
+                            <div class="form-outline mb-4" data-mdb-input-init>
+                                <input type="email" id="formEmail" class="form-control form-control-lg" required />
+                                <label class="form-label" for="formEmail">Địa chỉ Email</label>
+                            </div>
+
+                            <!-- Course Selection -->
+                            <div class="mb-4">
+                                <select class="form-select form-select-lg" aria-label="Default select example">
+                                    <option selected>Chọn khóa học bạn quan tâm</option>
+                                    <option value="1">Lập trình Java Fullstack</option>
+                                    <option value="2">Lập trình Frontend</option>
+                                    <option value="3">Kiểm thử phần mềm (Tester)</option>
+                                </select>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary btn-lg btn-block btn-rounded shadow-2-strong"
+                                data-mdb-ripple-init>
+                                Gửi Đăng Ký Trực Tuyến
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Footer -->
+    <footer class="bg-dark text-white text-center text-lg-start pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-5">
+                    <h5 class="fw-bold text-primary mb-3">CodeGym Career</h5>
+                    <p class="text-muted small">Hệ thống đào tạo lập trình hiện đại, cam kết hỗ trợ việc làm uy tín cho
+                        thế hệ lập trình viên mới.</p>
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <h5 class="fw-bold mb-3">Liên hệ</h5>
+                    <p class="text-muted small mb-1"><i class="fas fa-envelope me-2"></i>contact@codegym.vn</p>
+                    <p class="text-muted small"><i class="fas fa-phone me-2"></i>1800 6325</p>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3">Mạng xã hội</h5>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" data-mdb-ripple-init><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" data-mdb-ripple-init><i
+                            class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" data-mdb-ripple-init><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <hr class="my-3 border-secondary" />
+            <div class="text-center text-muted small">
+                &copy; 2026 CodeGym. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- MDBootstrap JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+</body>
+
+</html>
